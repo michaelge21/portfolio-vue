@@ -1,13 +1,23 @@
 <template>
   <NavBar></NavBar>
+
+  <main>
+    <User :age="age"></User>
+  </main>
 </template>
 
 <script>
 import NavBar from "../../components/NavBar.vue";
+import User from "../../components/User.vue";
 
 export default {
   name: "Portfolio",
-  components: { NavBar },
+  components: { NavBar, User },
+  data() {
+    return {
+      age: 0,
+    };
+  },
 };
 </script>
 

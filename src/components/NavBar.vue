@@ -1,8 +1,10 @@
 <template>
   <ul>
-    <li></li>
     <li>
-      <a href="src/pages/portfolio/index.html" target="_blank">Portfolio</a>
+      <a :href="relativeURL"></a>
+    </li>
+    <li>
+      <a href="src/pages/portfolio/index.html">Portfolio</a>
     </li>
     <li>About</li>
     <li>Resume</li>
@@ -13,6 +15,11 @@
 <script>
 export default {
   name: "NavBar",
+  data() {
+    return {
+      relativeURL: "#",
+    };
+  },
 };
 </script>
 
@@ -32,6 +39,14 @@ li:first-child {
   background-size: contain;
   width: 100px;
   height: 100px;
+  position: relative;
+}
+
+li:first-child a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 li {

@@ -8,7 +8,6 @@ export default {
     NavBar,
     BlogOutline,
   },
-
   data() {
     return {
       mouseX: 0,
@@ -17,11 +16,10 @@ export default {
       green: 170,
       blue: 0,
       rgb: "rgb(200,200,200)",
-      // nightMode: localStorage.getItem("nightMode") || false,
       postInfo: [
         {
           id: 1,
-          title: "Asian Mental Health: Organizing Conversations",
+          title: "Asian Mental Health",
           desc: "Breaking News: we, the youth, are noticing that maybe being stereotyped as perfectionists isn't good for us.",
           url: "/src/assets/betterMichaelReducedSize.png",
           altText: "alt1",
@@ -55,16 +53,6 @@ export default {
       ],
     };
   },
-
-  // watch: {
-  //   nightMode: {
-  //     handler() {
-  //       localStorage.setItem("nightMode", JSON.stringify(this.nightMode));
-  //       console.log("Night Mode: " + JSON.stringify(this.nightMode));
-  //     },
-  //     immediate: true,
-  //   },
-  // },
 
   methods: {
     mouseEnter(event) {
@@ -120,13 +108,8 @@ export default {
 </script>
 
 <template>
-  <!-- <div id="toggle" v-bind:class="{ 'theme-dark': nightMode }"> -->
   <header><NavBar></NavBar></header>
 
-  <!-- <input type="checkbox" id="theme-toggle" v-model="nightMode" />
-    <label for="theme-toggle" :style="{ borderColor: rgb }"
-      ><span></span
-    ></label> -->
   <main>
     <section
       class="hero"
@@ -166,7 +149,6 @@ export default {
       ></BlogOutline>
     </section>
   </main>
-  <!-- </div> -->
 </template>
 
 <style lang="scss" scoped>
@@ -216,8 +198,7 @@ main {
     }
   }
 }
-
-main > .blogIntro {
+.blogIntro {
   margin-top: 10vh;
 }
 
@@ -231,14 +212,14 @@ main > .blogIntro {
   gap: calc(1vw + 2vh + 3rem);
 }
 
-.blogContainer > * {
+.blogContainer > article {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s all;
   flex: 1 400px;
   margin: 10px 20px;
 }
 
-.blogContainer > *:hover {
+.blogContainer > article:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 </style>
@@ -265,79 +246,4 @@ body {
   margin: 0;
   padding: 0;
 }
-
-// :root {
-//   --toggle-size: 2rem;
-//   --switch-w: 4em;
-//   --switch-h: 2em;
-//   --switch-handle-scale: 0.65;
-//   --switch-off-handle-x: -0.125em;
-//   --switch-on-handle-x: calc(100% - 0.125em);
-//   --switch-transition-duration: 0.15s;
-// }
-
-// #toggle {
-//   background: hsl(0, 0%, 100%);
-
-//   &.theme-dark {
-//     color: white;
-//     background: hsl(207, 30%, 5%);
-//   }
-// }
-
-// #theme-toggle {
-//   display: none;
-
-//   & + label {
-//     font-size: var(--toggle-size);
-//     display: flex;
-//     height: var(--switch-h);
-//     width: var(--switch-w);
-//     border-radius: calc(var(--switch-h) / 2);
-//     background-size: auto 8em;
-//     background-position: bottom;
-//     background-image: linear-gradient(
-//       180deg,
-//       #021037 0%,
-//       #20206a 19%,
-//       #4184b1 66%,
-//       #62e7f7 100%
-//     );
-//     transition: var(--switch-transition-duration);
-//     border: 0.125em solid hsl(207, 30%, 95%);
-//     overflow: hidden;
-
-//     span {
-//       background: #fffad8;
-//       border-radius: 50%;
-//       height: var(--switch-h);
-//       width: var(--switch-h);
-//       transform: translateX(var(--switch-off-handle-x))
-//         scale(var(--switch-handle-scale));
-//       transition: var(--switch-transition-duration);
-//       cursor: pointer;
-//       box-shadow: 0 0 0.25em 0.0625em #fbee8d, 0 0 2em 0 #ffeb3b,
-//         inset -0.25em -0.25em 0 0 #fbee8e,
-//         inset -0.3125em -0.3125em 0 0.625em #fff5b2;
-//       margin-top: var(--switch-off-handle-x);
-//     }
-//   }
-
-//   &:checked {
-//     font-size: var(--switch-font-size);
-
-//     & + label {
-//       background-position: top;
-//       // border-color: hsl(207, 30%, 50%);
-
-//       span {
-//         background: transparent;
-//         transform: translateX(var(--switch-on-handle-x))
-//           scale(var(--switch-handle-scale));
-//         box-shadow: inset -0.1875em -0.1875em 0 0 #fbe7ef,
-//           inset -0.5625em -0.5625em 0 0 #fffff7;
-//       }
-//     }
-//   }
-// }
 </style>
