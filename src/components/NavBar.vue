@@ -20,6 +20,7 @@ export default {
       relativeURL: "#",
     };
   },
+  props: {},
 };
 </script>
 

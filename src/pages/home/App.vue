@@ -21,7 +21,6 @@ export default {
           id: 1,
           title: "Asian Mental Health",
           desc: "Breaking News: we, the youth, are noticing that maybe being stereotyped as perfectionists isn't good for us.",
-          url: "./src/assets/betterMichaelReducedSize.png",
           altText: "alt1",
           destination: "#",
         },
@@ -29,7 +28,6 @@ export default {
           id: 2,
           title: "Zoom University",
           desc: "Published by WashU's Center for Teaching and Learning. ",
-          url: "./src/assets/instructormeme.jpg",
           altText: "alt2",
           destination:
             "https://ctl.wustl.edu/zoom-university-students-and-instructors-on-pandemic-learning/",
@@ -38,7 +36,6 @@ export default {
           id: 3,
           title: "n00b perspectives: Learning Curves",
           desc: "Some thoughts for fellow front-end learners, especially self-taught friends.",
-          url: "./src/assets/betterMichaelReducedSize.png",
           altText: "alt3",
           destination: "#",
         },
@@ -46,7 +43,6 @@ export default {
           id: 4,
           title: "n00b perspectives: Feedback",
           desc: "Feedback is a huge part of Agile. Classrooms and EdPsych have been doing it for centuries... so what can we glean from our educators?",
-          url: "./src/assets/betterMichaelReducedSize.png",
           altText: "alt3",
           destination: "#",
         },
@@ -142,7 +138,6 @@ export default {
         :key="post.id"
         :title="post.title"
         :desc="post.desc"
-        :url="post.url"
         :destination="post.destination"
       ></BlogOutline>
     </section>

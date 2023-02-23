@@ -3,7 +3,6 @@
     <a :href="destination" target="_blank"></a>
     <h2>{{ title }}</h2>
     <p>{{ desc }}</p>
-    <img :src="url" :alt="altText" />
   </article>
 </template>
 
@@ -13,7 +12,6 @@ export default {
   props: {
     title: String,
     desc: String,
-    url: String,
     altText: String,
     destination: String,
   },
@@ -27,8 +25,8 @@ article {
   color: #333333;
 }
 
-article img {
-  max-width: 200px;
+article {
+  background-size: cover;
 }
 
 a {
