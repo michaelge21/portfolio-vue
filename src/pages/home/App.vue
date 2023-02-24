@@ -216,27 +216,3 @@ main {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 </style>
-
-<style lang="scss">
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-ul,
-li,
-main,
-body {
-  margin: 0;
-  padding: 0;
-}
-</style>
