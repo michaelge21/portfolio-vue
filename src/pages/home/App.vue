@@ -78,7 +78,7 @@ export default {
     },
 
     convertToBlue() {
-      this.blue = Math.round(((this.mouseY * 5) / window.innerWidth) * 255);
+      this.blue = Math.round(((this.mouseY * 6) / window.innerWidth) * 255);
       return this.blue;
     },
 

@@ -1,5 +1,5 @@
 <template>
-  <NavBar></NavBar>
+  <NavBar :disableLink="1" :homeURL="'../../../index.html'"></NavBar>
 
   <main>
     <User :age="age"></User>
