@@ -143,7 +143,7 @@ export default {
     </section>
 
     <section>
-      <a href="../../pages/portfolio/index.html">test</a>
+      <a href="src/pages/portfolio/index.html"></a>
     </section>
   </main>
 </template>
