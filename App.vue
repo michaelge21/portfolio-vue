@@ -1,6 +1,6 @@
 <script>
-import NavBar from "./../../components/NavBar.vue";
-import BlogOutline from "./../../components/BlogOutline.vue";
+import NavBar from "./src/components/NavBar.vue";
+import BlogOutline from "./src/components/BlogOutline.vue";
 
 export default {
   name: "App",

@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import NavBar from "../../components/NavBar.vue";
-import User from "../../components/User.vue";
+import NavBar from "./NavBar.vue";
+import User from "./User.vue";
 
 export default {
   name: "Portfolio",
