@@ -146,6 +146,9 @@ export default {
       <a href="src/pages/about/index.html">testnew</a>
     </section>
     <a href="src/testing.html">testing again </a>
+    <a href="./public/src/pages/portfolio/index.html"
+      >going to portfolio in public</a
+    >
   </main>
 </template>
 
