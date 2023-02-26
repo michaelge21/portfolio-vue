@@ -7,7 +7,7 @@ import vue from "@vitejs/plugin-vue";
 export default defineConfig({
   
   // used to ensure that github pages actually loads the damn thing
-  base:'/portfolio-vue/',
+  // base:'/portfolio-vue/',
   plugins: [vue()],
   resolve: {
     alias: {
